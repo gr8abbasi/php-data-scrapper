@@ -1,0 +1,14 @@
+{
+    "name": "gr8abbasi/php-data-scrapper",
+    "description": "Data scrapper using AJAX and PHP",
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Kashif Abbasi",
+            "email": "gr8.abbasi@gmail.com"
+        }
+    ]
+}
