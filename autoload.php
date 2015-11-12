@@ -5,10 +5,10 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'Sorting\\AbstractSorting'      => '/src/Sorting/AbstractSorting->php',
-                'Sorting\\QuickSort\\QuickSort' => '/src/Sorting/QuickSort/QuickSort->php',
-                'Sorting\\MergeSort\\MergeSort' => '/src/Sorting/MergeSort/MergeSort->php',
-
+                'Scrapper\\Connection' => '/src/Scrapper/Connection.php',
+                'Scrapper\\Parser'     => '/src/Scrapper/Parser.php',
+                'Scrapper\\Scrapper'   => '/src/Scrapper/Scrapper.php',
+                'Scrapper\\Sorter'     => '/src/Scrapper/Sorter.php',
             );
         }
         $cn = strtolower($class);
@@ -17,7 +17,6 @@ spl_autoload_register(
         }
 
     },
-        true,
-        false
-
-    );
+    true,
+    false
+);
