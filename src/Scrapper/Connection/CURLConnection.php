@@ -1,28 +1,14 @@
 <?php
 
-namespace Scrapper;
+namespace Scrapper\Connection;
 
 /**
- *  Scrapper\Connection
+ * Scrapper\Connection\CURLConnection
  */
-class Connection
+class CURLConnection extends AbstractConnection
 {
     /**
-     * @var string $url
-     */
-    protected $url;
-
-    /**
-     * @param string $url
-     */
-    public function __construct($url)
-    {
-        $this->url = $url;
-    }
-
-    /**
-     * Connect to the given URL using cURL
-     *
+     * {@inheritdoc}
      */
     public function connect()
     {
