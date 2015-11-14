@@ -2,6 +2,8 @@
 
 namespace Scrapper\Connection;
 
+use Scrapper\Connection\AbstractConnection;
+
 /**
  * Scrapper\Connection\CURLConnection
  */

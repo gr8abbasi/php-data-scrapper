@@ -5,7 +5,7 @@ namespace Scrapper\Connection;
 /**
  *  Scrapper\Connection\AbstractConnection
  */
-abstract class Connection implements ConnectionInterface
+abstract class AbstractConnection implements ConnectionInterface
 {
     /**
      * @var string
