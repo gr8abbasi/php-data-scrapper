@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace tests\Connection;
 
 use PHPUnit_Framework_TestCase;
 use Scrapper\Connection\CURLConnection;
@@ -8,7 +8,7 @@ use Scrapper\Connection\CURLConnection;
 /**
  * \CURLConnectionTest
  */
-class ConnectionTest extends PHPUnit_Framework_TestCase
+class CURLConnectionTest extends PHPUnit_Framework_TestCase
 {
     /** @var CURLConnection */
     protected $fixture;
@@ -36,8 +36,12 @@ class ConnectionTest extends PHPUnit_Framework_TestCase
      */
     public function canConnectToURLUsingCURL()
     {
-        $input = '';
-        $expected = $this->fixture->connect();
-        $this->assertEquals($input, $expected);
+        // preg_match("/<html>(.*?)<\/html>/s", $this->fixture->connect(), $regs);
+        // print_r($regs);exit;
+        // if (preg_match("/<html>(.*?)<\/html>/s", $this->fixture->connect(), $regs)) {
+        //     die('hererer');
+        //     $this->assertTrue(true);
+        // }
+        $this->assertNotEmpty($this->fixture->connect());
     }
 }
